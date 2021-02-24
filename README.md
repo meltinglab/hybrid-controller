@@ -12,20 +12,24 @@ This repository contains a MATLAB - Simulink project about the Model Based Desig
 └───Hybrid-controller
     ├───Controller
     │   └───Generated Code
-    ├───MIL
     ├───Plant
-        └───Test
+    ├───Simulation
+    │   ├───MIL
+    │   └───SIL
+    └───Test
         ├───ControllerTest
         │   ├───Baselines
         │   ├───Test Reports
-        │   └───Test Scenarios
+        │   └───testScenarios
         ├───FSM Test
         │   ├───Baselines
+        │   │   └───NoChargeToED_baseline
         │   ├───Inputs
         │   └───Test Reports
         └───Integration Test
             └───Inputs
 ```
+
 ## __Installation__
 ### Requirements
 - MATLAB R2020b
