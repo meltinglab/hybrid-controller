@@ -1383,7 +1383,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetInputPortComplexSignal(S, 0, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetInputPortSampleTime(S, 0, 0.2);
+  ssSetInputPortSampleTime(S, 0, 0.01);
   ssSetInputPortOffsetTime(S, 0, 0);
 
   /* sampling mode */
@@ -1437,7 +1437,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetInputPortComplexSignal(S, 1, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetInputPortSampleTime(S, 1, 0.2);
+  ssSetInputPortSampleTime(S, 1, 0.01);
   ssSetInputPortOffsetTime(S, 1, 0);
 
   /* sampling mode */
@@ -1491,7 +1491,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetInputPortComplexSignal(S, 2, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetInputPortSampleTime(S, 2, 0.2);
+  ssSetInputPortSampleTime(S, 2, 0.01);
   ssSetInputPortOffsetTime(S, 2, 0);
 
   /* sampling mode */
@@ -1545,7 +1545,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetInputPortComplexSignal(S, 3, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetInputPortSampleTime(S, 3, 0.2);
+  ssSetInputPortSampleTime(S, 3, 0.01);
   ssSetInputPortOffsetTime(S, 3, 0);
 
   /* sampling mode */
@@ -1599,7 +1599,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetInputPortComplexSignal(S, 4, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetInputPortSampleTime(S, 4, 0.2);
+  ssSetInputPortSampleTime(S, 4, 0.01);
   ssSetInputPortOffsetTime(S, 4, 0);
 
   /* sampling mode */
@@ -1652,7 +1652,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetOutputPortComplexSignal(S, 0, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetOutputPortSampleTime(S, 0, 0.2);
+  ssSetOutputPortSampleTime(S, 0, 0.01);
   ssSetOutputPortOffsetTime(S, 0, 0);
 
   /* sampling mode */
@@ -1701,7 +1701,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetOutputPortComplexSignal(S, 1, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetOutputPortSampleTime(S, 1, 0.2);
+  ssSetOutputPortSampleTime(S, 1, 0.01);
   ssSetOutputPortOffsetTime(S, 1, 0);
 
   /* sampling mode */
@@ -1750,7 +1750,7 @@ static void mdlInitializeSizes(SimStruct *S)
   ssSetOutputPortComplexSignal(S, 2, COMPLEX_NO);
 
   /* using port based sample times */
-  ssSetOutputPortSampleTime(S, 2, 0.2);
+  ssSetOutputPortSampleTime(S, 2, 0.01);
   ssSetOutputPortOffsetTime(S, 2, 0);
 
   /* sampling mode */

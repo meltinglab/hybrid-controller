@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Controller'. 
 ## 
 ## Makefile     : Controller.mk
-## Generated on : Fri Feb 26 10:42:53 2021
+## Generated on : Fri Feb 26 19:18:58 2021
 ## Final product: ./Controller.exe
 ## Product type : executable
 ## 
@@ -138,7 +138,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(MATLAB_ROOT)/toolbox/rtw/targets/pil/c -I$(START_DIR)/Controller_ert_rtw/sil -I$(MATLAB_ROOT)/extern/include/coder/connectivity/XILTgtAppSvc -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src -I$(MATLAB_ROOT)/extern/include/coder/connectivity/CoderAssumpTgtAppSvc -I$(START_DIR)/Controller_ert_rtw/coderassumptions
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(START_DIR)/slprj/ert/_sharedutils -I$(MATLAB_ROOT)/toolbox/rtw/targets/pil/c -I$(START_DIR)/Controller_ert_rtw/sil -I$(MATLAB_ROOT)/extern/include/coder/connectivity/XILTgtAppSvc -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src/utils -I$(MATLAB_ROOT)/toolbox/coder/rtiostream/src -I$(MATLAB_ROOT)/extern/include/coder/connectivity/CoderAssumpTgtAppSvc -I$(START_DIR)/Controller_ert_rtw/coderassumptions
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 

@@ -7,14 +7,14 @@
  *
  * Code generated for Simulink model 'Controller'.
  *
- * Model version                  : 1.9
+ * Model version                  : 1.11
  * Simulink Coder version         : 9.4 (R2020b) 29-Jul-2020
- * C/C++ source code generated on : Fri Feb 26 10:40:43 2021
+ * C/C++ source code generated on : Fri Feb 26 19:17:22 2021
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
  * Code generation objective: MISRA C:2012 guidelines
- * Validation result: Not run
+ * Validation result: All passed
  */
 
 #ifndef RTW_HEADER_Controller_h_
@@ -41,25 +41,25 @@ typedef struct {
   real_T Merge;                        /* '<S3>/Merge' */
   real_T Merge2;                       /* '<S3>/Merge2' */
   real_T Merge1;                       /* '<S3>/Merge1' */
-  real_T Probe[2];                     /* '<S18>/Probe' */
-  real_T Probe_b[2];                   /* '<S11>/Probe' */
+  real_T Probe[2];                     /* '<S19>/Probe' */
+  real_T Probe_j[2];                   /* '<S12>/Probe' */
 } B_Controller_T;
 
 /* Block states (default storage) for system '<Root>' */
 typedef struct {
-  real_T Integrator_DSTATE;            /* '<S23>/Integrator' */
-  real_T Integrator_DSTATE_n;          /* '<S16>/Integrator' */
+  real_T Integrator_DSTATE;            /* '<S24>/Integrator' */
+  real_T Integrator_DSTATE_n;          /* '<S17>/Integrator' */
   int8_T SwitchCase_ActiveSubsystem;   /* '<S3>/Switch Case' */
-  int8_T Integrator_PrevResetState;    /* '<S23>/Integrator' */
-  int8_T Integrator_PrevResetState_n;  /* '<S16>/Integrator' */
+  int8_T Integrator_PrevResetState;    /* '<S24>/Integrator' */
+  int8_T Integrator_PrevResetState_n;  /* '<S17>/Integrator' */
   uint8_T is_active_c3_Controller;     /* '<S2>/Chart' */
   uint8_T is_c3_Controller;            /* '<S2>/Chart' */
 } DW_Controller_T;
 
 /* Invariant block signals (default storage) */
 typedef struct {
-  const real_T Constant;               /* '<S22>/Constant' */
-  const real_T Constant_c;             /* '<S15>/Constant' */
+  const real_T Constant;               /* '<S23>/Constant' */
+  const real_T Constant_c;             /* '<S16>/Constant' */
 } ConstB_Controller_T;
 
 /* External inputs (root inport signals with default storage) */
@@ -107,10 +107,10 @@ extern RT_MODEL_Controller_T *const Controller_M;
 /*-
  * These blocks were eliminated from the model due to optimizations:
  *
- * Block '<S16>/Saturation' : Eliminated Saturate block
- * Block '<S10>/K' : Eliminated nontunable gain of 1
- * Block '<S23>/Saturation' : Eliminated Saturate block
- * Block '<S17>/K' : Eliminated nontunable gain of 1
+ * Block '<S17>/Saturation' : Eliminated Saturate block
+ * Block '<S11>/K' : Eliminated nontunable gain of 1
+ * Block '<S24>/Saturation' : Eliminated Saturate block
+ * Block '<S18>/K' : Eliminated nontunable gain of 1
  */
 
 /*-
@@ -137,23 +137,24 @@ extern RT_MODEL_Controller_T *const Controller_M;
  * '<S4>'   : 'ControllerModel/Controller/FSM/Chart'
  * '<S5>'   : 'ControllerModel/Controller/TrqDemController/Combined'
  * '<S6>'   : 'ControllerModel/Controller/TrqDemController/Dead'
- * '<S7>'   : 'ControllerModel/Controller/TrqDemController/ED'
- * '<S8>'   : 'ControllerModel/Controller/TrqDemController/No charge'
- * '<S9>'   : 'ControllerModel/Controller/TrqDemController/Regenerative braking'
- * '<S10>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)'
- * '<S11>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant'
- * '<S12>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Initialization'
- * '<S13>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
- * '<S14>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Zero'
- * '<S15>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_param'
- * '<S16>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
- * '<S17>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)'
- * '<S18>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant'
- * '<S19>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Initialization'
- * '<S20>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
- * '<S21>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Enable//disable time constant/Compare To Zero'
- * '<S22>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_param'
- * '<S23>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
+ * '<S7>'   : 'ControllerModel/Controller/TrqDemController/Default'
+ * '<S8>'   : 'ControllerModel/Controller/TrqDemController/ED'
+ * '<S9>'   : 'ControllerModel/Controller/TrqDemController/No charge'
+ * '<S10>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking'
+ * '<S11>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)'
+ * '<S12>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/EnableDisable time constant'
+ * '<S13>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Initialization'
+ * '<S14>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
+ * '<S15>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/EnableDisable time constant/Compare To Zero'
+ * '<S16>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_param'
+ * '<S17>'  : 'ControllerModel/Controller/TrqDemController/Combined/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
+ * '<S18>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)'
+ * '<S19>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/EnableDisable time constant'
+ * '<S20>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Initialization'
+ * '<S21>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)'
+ * '<S22>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/EnableDisable time constant/Compare To Zero'
+ * '<S23>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Initialization/Init_param'
+ * '<S24>'  : 'ControllerModel/Controller/TrqDemController/Regenerative braking/Low-Pass Filter (Discrete or Continuous)/Integrator (Discrete or Continuous)/Discrete'
  */
 #endif                                 /* RTW_HEADER_Controller_h_ */
 

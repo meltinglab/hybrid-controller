@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Controller'. 
 ## 
 ## Makefile     : Controller.mk
-## Generated on : Fri Feb 26 10:40:52 2021
+## Generated on : Fri Feb 26 19:17:31 2021
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/Controller.exe
 ## Product type : executable
 ## 
@@ -136,7 +136,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(START_DIR)/slprj/ert/_sharedutils
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 

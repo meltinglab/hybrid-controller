@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Controller_ca'. 
 ## 
 ## Makefile     : Controller_ca.mk
-## Generated on : Fri Feb 26 10:41:03 2021
+## Generated on : Fri Feb 26 19:17:40 2021
 ## Final product: ./Controller_ca.lib
 ## Product type : static library
 ## 
@@ -138,7 +138,7 @@ BUILD_TYPE = "Model Reference Library"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I$(MATLAB_ROOT)/toolbox/rtw/targets/pil/c -I$(START_DIR)/Controller_ert_rtw/coderassumptions -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(MATLAB_ROOT)/toolbox/rtw/targets/pil/c -I$(START_DIR)/Controller_ert_rtw/coderassumptions -I$(START_DIR)/Controller_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(START_DIR)/slprj/ert/_sharedutils
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
