@@ -43,11 +43,11 @@ This repository contains a MATLAB - Simulink project about the Model Based Desig
 - Control System Toolbox
 
 ### Setup
-1. Clone the code or download the _.zip file_. 
+1. Clone the code or download the _.zip_ file. 
 2. Open the MATLAB project file `Hybrid-controller/HybridController.prj`
 
 ## Usage
-The Simulink model `Hybrid-controller/Simulation/HybridVehicle.slx` contains the PHEV plant in which has been integrated the controlle (with default drive cycle is the WLTP Class 3).
+The Simulink model `Hybrid-controller/Simulation/HybridVehicle.slx` contains the PHEV plant in which has been integrated the controller (with default drive cycle is the WLTP Class 3).
 
 ## Authors
  - Gallina Giuseppe
