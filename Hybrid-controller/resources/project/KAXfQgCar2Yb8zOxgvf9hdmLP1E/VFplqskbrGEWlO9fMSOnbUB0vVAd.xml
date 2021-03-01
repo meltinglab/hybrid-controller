@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Info Type="StartUp" Visible="0" Icon="" File="Simulation/MIL/HybridVehicle.slx" Name="HybridVehicle">
+    <Extension Value="613904ea-9e9f-4336-bd33-30db4d691d52" Name="StartUpPrev" />
+</Info>
