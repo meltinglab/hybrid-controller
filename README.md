@@ -50,7 +50,7 @@ This repository contains a MATLAB/Simulink project about the Model-Based Design 
 2. Open the MATLAB project file `Hybrid-controller/HybridController.prj`
 
 ## Usage
-The Simulink model `Hybrid-controller/Simulation/HybridVehicle.slx` contains the PHEV plant in which has been integrated the controller (with default drive cycle is the WLTP Class 3).
+The Simulink model `Hybrid-controller/Simulation/MIL/HybridVehicle.slx` contains the PHEV plant in which has been integrated the controller (with default drive cycle is the WLTP Class 3).
 
 ## Reports
 This repository is provided with the following reports:
